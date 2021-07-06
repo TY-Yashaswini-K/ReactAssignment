@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <tbody>
+        <tr>
+             <td >
+                <select  style="width: 1000px; height: 40px; margin-top: 60px; margin-left: 180px; " id="select" name="place1"  onchange="changing(this)">
+               <option value=""> select</option>
+             <option value="red"> Red</option>
+             <option value="green"> Green</option>
+             <option value="orange"> Orange </option>
+             <option value="blue"> Blue </option>
+             <option value="yellow"> Yellow </option>
+             </select></td>
+      
+        </tr>
+        </tbody>
+        <script>
+            function changing(that){
+ var colors = document.getElementById('select').value;
+ 
+that.parentNode.style.backgroundColor =colors
+  
+  }
+        </script>
+</body>
+</html>
